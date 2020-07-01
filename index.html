@@ -25,8 +25,8 @@
 	#b{
 		width: 200px;
 		height: 200px;
-		position: relative;
-		top: 400px;
+		position:absolute;
+		top: 420px;
 		bottom: 0;
 		left: 0;
 		right: 0;
@@ -35,16 +35,26 @@
 	}
 	#bb{background-image: url(img/1.jpg);
 		background-position: center;
-		width: 200px;
+		width: 120px;
 		border-radius: 100px;
-		height: 100px;
+		height: 60px;
 		filter:alpha(Opacity=80);-moz-opacity:0.5;opacity:0.5;
-		font-size: 40px;
+		font-size: 30px;
 		font-family: "华文彩云";
 		font-weight: bold;
-
-		
+		position:absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;	
 	}
+			.imgHoverZoom img{
+-webkit-transition: -webkit-transform .3s ease;
+-moz-transition: -moz-transform .3s ease;
+-ms-transition: -ms-transform .3s ease;
+transition: transform .3s ease;
+}
 </style>
 </head>
 
@@ -53,7 +63,7 @@
 <div id="wai" style="width:0px; height:150px; overflow:hidden; top:150px; position: relative; left: 50px;">
     <div id="shi">欢迎来到杭州，<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里你将领略杭州的诗情画意！</div>
-</div><div id="b"><input type="button" id="bb" value="开始" onClick="tz()"></div></div>
+</div><div id="b"><input type="button" id="bb" value="开始" onClick="tz()" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" border="0"></div></div>
 </body>
 <script type="text/javascript">
 showshi();
@@ -71,6 +81,19 @@ function tz(){
  
 window.location.href='shouye.html';
  
+}
+function bigImg(x)
+{
+x.style.height="80px";
+x.style.width="200px";
+x.style.fontSize="50px";
+}
+
+function normalImg(x)
+{
+x.style.height="60px";
+x.style.width="120px";
+x.style.fontSize="30px";
 }
 </script>
 </html>
