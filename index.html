@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+#shi
+{
+    font-size:40px;
+    color:#09F;
+    height:25px;
+    font-weight:bold;
+    width:1024px;
+	font-family: "楷体"
+}
+	#a{background-size: 1024px 768px;
+		background-image: url(img/13.jpg);
+		width: 1024px;
+		height: 768px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	#b{
+		width: 200px;
+		height: 200px;
+		position: relative;
+		top: 400px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		border-radius: 200px;
+	}
+	#bb{background-image: url(img/1.jpg);
+		background-position: center;
+		width: 200px;
+		border-radius: 100px;
+		height: 100px;
+		filter:alpha(Opacity=80);-moz-opacity:0.5;opacity:0.5;
+		font-size: 40px;
+		font-family: "华文彩云";
+		font-weight: bold;
+
+		
+	}
+</style>
+</head>
+
+<body>
+<div id="a">
+<div id="wai" style="width:0px; height:150px; overflow:hidden; top:150px; position: relative; left: 50px;">
+    <div id="shi">欢迎来到杭州，<br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里你将领略杭州的诗情画意！</div>
+</div><div id="b"><input type="button" id="bb" value="开始" onClick="tz()"></div></div>
+</body>
+<script type="text/javascript">
+showshi();
+function showshi()
+{
+    var s= document.getElementById("wai");
+    if(parseInt(s.style.width)<1024)
+    {
+    var w=parseInt(s.style.width)+1;
+    s.style.width=w+"px";
+    window.setTimeout("showshi()",5);
+    }
+}
+function tz(){
+ 
+window.location.href='shouye.html';
+ 
+}
+</script>
+</html>
