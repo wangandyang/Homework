@@ -29,6 +29,7 @@
 	    font-size: 40px;	
 		font-family:"华文隶书";
 		font-weight: bold;
+		font-style:italic;
 	}
 	#a2{
 		width: 160px;
@@ -50,7 +51,7 @@
 		border-radius:30px;
 	}
 	#a4{background-color:white;
-		filter:alpha(Opacity=70);-moz-opacity:0.7;opacity:0.7;
+		filter:alpha(Opacity=70);-moz-opacity:0.5;opacity:0.8;
 		width: 624px;
 		height: 310px;
 		border: solid 6px silver;
@@ -248,55 +249,42 @@
 		bottom: 0;
 		margin: auto;
 	}
-	#ba{
-		width: 100px;
-		height: 50px;
-		border-radius:15px;
-		background-color: silver;
-		background-position: 100%;
-		font-size: 20px;
-		font-family:"华文行楷";
-		font-weight: bold;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
+	#nav{
+		list-style-type: none;
+		
 	}
-		#bb{
-		width: 100px;
-		height: 50px;
-		border-radius:15px;
-		background-color: silver;
-		background-position: 100%;
-		font-size: 20px;
-		font-family:"华文行楷";
-		font-weight: bold;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
+	#nav li{
+			font-size: 20px;
+		    font-family:"华文行楷";
+		    border-radius: 15px;
+		    background-color: darkgray;
+		    width: 100px;
+            line-height: 40px;
+            text-align: center;
+            list-style: none;
+            height: 40px;
+            position: relative;
+		    left: -20px;
+        }
+	#nav li ul{
+		 display: none;
+         position: absolute;
+         top: 40px;
+         left:0px;
 	}
-		#bc{
-		width: 100px;
-		height: 50px;
-		border-radius:15px;
-		background-color: silver;
-		background-position: 100%;
-		font-size: 20px;
-		font-family:"华文行楷";
-		font-weight: bold;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-	}
-	a:link{color: red;text-decoration: none;}
+	 #nav li ul li{
+		 background-color: darkgray;
+            float: left;
+            margin: 2px;
+            width:100px;
+		    left: -41px;
+            text-align: center;
+		    border-radius: 15px;
+        }
+	  #nav li:hover ul{
+            display: block;
+        }
+	a:link{color:white;text-decoration: none;}
 	a:visited{color:black;text-decoration: none;}
 	a:hover{color: purple;text-decoration: none;}
 	a:active{color:green;text-decoration: none;}
@@ -323,24 +311,50 @@ x.style.fontSize="20px";
 
 <body>
 <div id="a">
-<div id="a1">诗情画意杭州记</div>
-<div id="a4">
-<div id="a4a"><a href="">《饮湖上初晴后雨》<br></a><br>苏轼<br><br>水光潋滟晴方好，山色空蒙雨亦奇。<br><br>欲把西湖比西子，浓妆淡抹总相宜。</div>
-<div id="a4b"><a href="">《杭州》<br></a><br>谢驿<br><br>谁把杭州曲子讴，荷花十里桂三秋。<br><br>那知卉木无情物，牵动长江万里愁。</div>
-<div id="a4c"><a href="">《晓出净慈寺送林子方》<br></a><br>杨万里<br><br>毕竟西湖六月中，风光不与四时同。<br><br>接天莲叶无穷碧，映日荷花别样红。</div>
-<div id="a4d"><a href="">《题临安邸》<br></a><br>林升<br><br>山外青山楼外楼，西湖歌舞几时休。<br><br>暖风熏得游人醉，直把杭州当汴州。</a></div></div>
-<div id="a5">
-<div id="a5a"><a href="img/17.jpg"><img src="img/17.jpg" width="170px" height="235px"></a><a href="">陈清波《断桥残雪》</a></div>
-<div id="a5b"><img src="img/18.jpg" width="170px" height="235px"><a href="">马远《平湖秋月》</a></div>
-<div id="a5c"><img src="img/19.jpg" width="170px" height="235px"><a href="">马远《柳浪闻莺》</a></div>
-</div>
-<div id="a3">
-<div id="a3a"><input type="button" id="ba" value="课后习题"></div>
-<div id="a3b"><input type="button" id="bb" value="小游戏"></div>
-<div id="a3c"><input type="button" id="bc" value="成就"></div></div>
-<div id="a2"><div id="a2a"><input type="button" id="aa" value="诗情" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" border="0" onClick=""></div>
-<div id="a2b"><input type="button" id="ab" value="画意" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" border="0" onClick="img/11.jpg"></div>
-</div>
+  <div id="a1">诗情画意杭州记</div>
+  <div id="a4">
+    <div id="a4a"><a href="">《饮湖上初晴后雨》<br></a><br>苏轼<br><br>水光潋滟晴方好，山色空蒙雨亦奇。<br><br>欲把西湖比西子，浓妆淡抹总相宜。</div>
+    <div id="a4b"><a href="">《杭州》<br></a><br>谢驿<br><br>谁把杭州曲子讴，荷花十里桂三秋。<br><br>那知卉木无情物，牵动长江万里愁。</div>
+    <div id="a4c"><a href="">《晓出净慈寺送林子方》<br></a><br>杨万里<br><br>毕竟西湖六月中，风光不与四时同。<br><br>接天莲叶无穷碧，映日荷花别样红。</div>
+    <div id="a4d"><a href="">《题临安邸》<br></a><br>林升<br><br>山外青山楼外楼，西湖歌舞几时休。<br><br>暖风熏得游人醉，直把杭州当汴州。</div>
+  </div>
+  <div id="a5">
+    <div id="a5a"><a href="img/17.jpg"><img src="img/17.jpg" width="170px" height="235px"></a><a href="#">陈清波《断桥残雪》</a></div>
+    <div id="a5b"><a href="img/18.jpg"><img src="img/18.jpg" width="170px" height="235px"></a><a href="#">马远《平湖秋月》</a></div>
+    <div id="a5c"><a href="img/19.jpg"><img src="img/19.jpg" width="170px" height="235px"></a><a href="#">马远《柳浪闻莺》</a></div>
+  </div>
+  <div id="a3">
+    <div id="a3a">
+      <ul id="nav">
+        <li><a href="#">课后习题</a>
+          <ul>
+            <li><a href="#">选择题</a></li>
+            <li><a href="#">填空题</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="a3b">
+      <ul id="nav">
+        <li><a href="#">小游戏</a>
+          <ul>
+            <li><a href="#">诗人匹配</a></li>
+            <li><a href="#">名画拼图</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="a3c">
+      <ul id="nav">
+        <li><a href="#">成就</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="a2">
+    <div id="a2a"><input type="button" id="aa" value="诗情" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" border="0" onClick=""></div>
+    <div id="a2b"><input type="button" id="ab" value="画意" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" border="0" onClick="img/11.jpg"></div>
+  </div>
 </div>
 </body>
 </html>

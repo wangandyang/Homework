@@ -6,12 +6,14 @@
 <style type="text/css">
 #shi
 {
-    font-size:40px;
+    font-size:43px;
     color:#09F;
     height:25px;
     font-weight:bold;
     width:1024px;
-	font-family: "楷体"
+	text-shadow: 5px 5px 5px black,-1px -1px 6px gold, 2px 2px 3px green; 
+	font-family:隶书;
+	font-style:italic;
 }
 	#a{background-size: 1024px 768px;
 		background-image: url(img/13.jpg);
@@ -49,18 +51,13 @@
 		right: 0;
 		margin: auto;	
 	}
-			.imgHoverZoom img{
--webkit-transition: -webkit-transform .3s ease;
--moz-transition: -moz-transform .3s ease;
--ms-transition: -ms-transform .3s ease;
-transition: transform .3s ease;
-}
+
 </style>
 </head>
 
 <body>
 <div id="a">
-<div id="wai" style="width:0px; height:150px; overflow:hidden; top:150px; position: relative; left: 50px;">
+<div id="wai" style="width:0px; height:150px; overflow:hidden; top:200px; position: relative; left: 50px;">
     <div id="shi">欢迎来到杭州，<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里你将领略杭州的诗情画意！</div>
 </div><div id="b"><input type="button" id="bb" value="开始" onClick="tz()" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" border="0"></div></div>
