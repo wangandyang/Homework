@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>练习题</title>
+<style>
+	#a{background-size: 1024px 768px;
+		background-image: url( img/31.jpg);
+		height: 768px;
+		width: 1024px;
+		border: solid 3px;
+		border-radius: 20px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		}
+	#b{
+		width: 300px;
+		height: 100px;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		line-height: 100px;
+	    font-size: 60px;	
+		font-family:"华文隶书";
+		font-weight: bold;
+		font-style:italic;
+	}
+		#timu{
+		position: absolute;
+		top:220px;
+		left:290px;
+		width: 580px;
+		height: 250px;
+		font-family: 幼圆;
+		color: white;
+		
+	}
+	#timu ul{
+		font-size: 18pt;
+	}
+	#anniu1{
+		position: absolute;
+		top:90px;
+		left:50px;
+		color: white;
+	}
+	#anniu2{
+		position: absolute;
+		top:90px;
+		left:250px;
+		color: white;
+	}
+	#anniu3{
+		position: absolute;
+		top:150px;
+		left:50px;
+		color: white;
+	}
+	#anniu4{
+		position: absolute;
+		top:150px;
+		left:250px;
+		color: white;
+	}
+	#tijiao{
+		position: absolute;
+		top:200px;
+		left:210px;
+		width: 70px;
+		height: 40px;
+		font-size: 18pt;
+		font-weight: bolder;
+		font-family: 幼圆;
+		background-color:#F7A04B;
+		color:#050303;
+		border-radius: 5px;
+	}
+	#tijiao:hover{
+		width: 72px;
+		height: 42px;
+	}
+	#true{
+		position: absolute;
+		top:80px;
+		left: 150px;
+	}
+	#false1{
+		position: absolute;
+		top:80px;
+		left: 350px;
+	}
+	#false2{
+		position: absolute;
+		top:140px;
+		left: 150px;
+	}
+	#false3{
+		position: absolute;
+		top:140px;
+		left: 350px;
+	}
+	#tishi{
+		position: absolute;
+		top: 206px;
+		left: 300px;
+		font-size: 18pt;
+		color: #DF4446;
+		font-weight: bolder;
+	}
+	#return{
+		position: absolute;
+		top:520px;
+		left:50px;
+	}
+	#return:hover{
+		cursor: pointer;
+		transform:scale(1.1);
+	}
+#d{
+		right: 10px;
+		float: right;
+		width: 60px;
+		height: 70px;
+	position: absolute;
+		top: 5px;
+		right: 10px;
+	}
+	#d1{
+		width: 60px;
+		height: 50px;
+		background-image:  url( img/00.jpg);
+		background-position: center;
+		background-size: 50px;
+		border-radius: 5px;
+		border: none;
+	}
+	#c{
+		width: 60px;
+		height: 50px;
+	    position: absolute;
+		top: 5px;
+		left: 10px;
+	}
+	#c1{
+		width: 60px;
+		height: 55px;
+		background-image:  url( img/000.jpg);
+		background-position: center;
+		background-size: 80px;
+		border-radius: 5px;
+		border: none;
+	}
+	</style>
+	<script>
+function myfunction()
+	{
+		var daan=document.myform.answer.value;
+		if(daan=="answer1")
+			{
+				document.getElementById("true").style.display="block";
+				document.getElementById("false1").style.display="no'ne";
+				document.getElementById("false2").style.display="none";
+				document.getElementById("false3").style.display="none";
+			}
+		else if(daan=="answer2")
+			{
+				document.getElementById("false1").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false2").style.display="none";
+				document.getElementById("false3").style.display="none";
+			
+			}
+		else if(daan=="answer3")
+			{
+				document.getElementById("false2").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false1").style.display="none";
+				document.getElementById("false3").style.display="none";
+				
+			}
+		else if(daan=="answer4")
+			{
+				document.getElementById("false3").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false1").style.display="none";
+				document.getElementById("false2").style.display="none";
+				
+			}
+		else
+			{
+				document.getElementById("tishi").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false1").style.display="none";
+				document.getElementById("false2").style.display="none";
+				document.getElementById("false3").style.display="none";
+			
+			}
+	}
+function tz1(){
+ 
+window.location.href='shouye.html';
+ 
+}
+function tz2(){
+ 
+window.location.href='xiti2.html';
+ 
+}
+</script>
+</head>
+
+<body>
+<div id="a">
+	<div id="b">选择题</div>
+	<div id="d"><input type="button" id="d1"  border="0" onClick="tz2()"></div>
+    <div id="c"><input type="button" id="c1"  border="0" onClick="tz1()"></div>
+	<div id="timu">
+			<h2>1.饮湖上初晴后雨的作者是?</h2>
+			<form action="" method="post" name="myform" id="myform">
+		<ul style="list-style: none">
+		<li id="anniu1">
+		<input type="radio" value="answer1" name="answer" >A.苏轼</li>
+		<li id="anniu2">
+		<input type="radio" value="answer2" name="answer" >B.李白</li>
+		<li id="anniu3">
+		<input type="radio" value="answer3" name="answer" >C.杨万里</li>
+		<li id="anniu4">
+		<input type="radio" value="answer4" name="answer" >D.林升</li>
+		</ul>
+		<input type="button" value="提交" name="submit" id="tijiao" onClick="myfunction()">
+		<img src="img/28.jpg" alt="" width="50px" height="50px" id="true" style="display: none">
+	  <img src="img/29.jpg" alt="" width="50px" height="50px" id="false1" style="display: none">
+	  <img src="img/29.jpg" alt="" width="50px" height="50px" id="false2" style="display: none">
+	  <img src="img/29.jpg" alt="" width="50px" height="50px" id="false3" style="display: none">
+	  <div id="tishi" style="display: none">还没答题哦！</div>
+	</form>
+    </div>
+</div>
+</body>
+</html>

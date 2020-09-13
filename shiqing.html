@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>诗情</title>
+<style type="text/css">
+	#a{	background-image: url(img/12.jpg);
+		background-size: 1024px 768px;
+		width: 1024px;
+		height: 768px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;		
+	  }
+	#b{width: 800px;
+		height:80px;
+		width: 800px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;	
+	  }
+	#ba{border:2px solid darkgray;
+		height: 80px;
+		position: absolute;
+		left: 200px;	
+	}
+	#bc{height: 80px;
+		border:2px solid darkgray;
+		position: absolute;
+		left: 600px;	
+	}
+	#c{width: 800px;
+		height:120px;
+		width: 800px;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		margin: auto;	
+	  }
+	#ca{
+		height: 120px;
+		width: 120px;
+		position: absolute;
+		left: 140px;
+	}
+	#cba1{
+		width: 100px;
+		height: 100px;
+		border-radius:120px;
+		background-image: url(img/05.jpg);
+		background-position: 50%;
+		background-size: 50%;
+		font-size: 20px;
+		font-family:"华文行楷";
+		font-weight: bold;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: auto;
+	}
+	#cc{
+		height: 120px;
+		width: 120px;
+		position: absolute;
+		left: 540px;
+	}
+	#d{width: 800px;
+		height: 528px;
+		border: solid 6px silver;
+		border-style:groove;
+		border-radius: 20px; 
+		position: absolute;
+		top: 200px;
+		left: 0;
+		right: 0;
+		margin: auto;	
+	}
+	#da{
+		float: left;
+		width: 310px;
+		height: 528px;
+		font-size: 20px;
+		font-family:"华文行楷";
+		font-weight: bold;
+	}
+	    #nav{list-style-type: none;}
+	#nav li{
+		margin-left: -40px;
+	}
+	#db{
+		left: 310px;
+		border-left: solid 6px silver;
+		width: 490px;
+		height: 528px;
+	    position: absolute;
+		font-size: 20px;
+		font-family:"华文行楷";
+		font-weight: bold;
+		text-align: center;
+	}
+	p{text-align: left;}
+	a:link{color:black;text-decoration: none;}
+	a:visited{color:black;text-decoration: none;}
+	a:hover{color: purple;text-decoration: none;}
+	a:active{color:green;text-decoration: none;}
+</style>
+<script>
+	window.onload = function(){ 
+     var audio = document.getElementById('music');
+         audio.pause();//打开页面时无音乐
+}
+function play() {
+    var audio = document.getElementById('music');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="images/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = -1;//音乐从头播放
+        document.getElementById('musicImg').src="images/stop.png";
+    }
+}
+	window.onload = function(){ 
+     var audio = document.getElementById('music1');
+         audio.pause();//打开页面时无音乐
+}
+function play1() {
+    var audio = document.getElementById('music1');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="images/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = -1;//音乐从头播放
+        document.getElementById('musicImg').src="images/stop.png";
+    }
+}
+	window.onload = function(){ 
+     var audio = document.getElementById('music2');
+         audio.pause();//打开页面时无音乐
+}
+function play2() {
+    var audio = document.getElementById('music2');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="images/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = -1;//音乐从头播放
+        document.getElementById('musicImg').src="images/stop.png";
+    }
+}
+	window.onload = function(){ 
+     var audio = document.getElementById('music3');
+         audio.pause();//打开页面时无音乐
+}
+function play3() {
+    var audio = document.getElementById('music3');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="images/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = -1;//音乐从头播放
+        document.getElementById('musicImg').src="images/stop.png";
+    }
+}
+		window.onload = function(){ 
+     var audio = document.getElementById('music3');
+         audio.pause();//打开页面时无音乐
+}
+function play3() {
+    var audio = document.getElementById('music3');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="images/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = -1;//音乐从头播放
+        document.getElementById('musicImg').src="images/stop.png";
+    }
+}
+		window.onload = function(){ 
+     var audio = document.getElementById('music4');
+         audio.pause();//打开页面时无音乐
+}
+function play4() {
+    var audio = document.getElementById('music4');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="images/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = -1;//音乐从头播放
+        document.getElementById('musicImg').src="images/stop.png";
+    }
+}
+function bigImg(x)
+{
+x.style.height="120px";
+x.style.width="120px";
+x.style.fontSize="40px";
+	x.style.left="1px";
+	x.style.margin="auto";
+}
+
+function normalImg(x)
+{
+x.style.height="90px";
+x.style.width="90px";
+x.style.fontSize="20px";
+	x.style.left="1px";
+}
+function testdata(obj){
+document.getElementById('db').innerHTML=obj;
+ }
+function tz1(){
+window.location.href='shouye.html';
+}
+	function tz2(){
+window.location.href='pp.html';
+}
+	function tz3(){
+window.location.href='xiti1.html';
+}
+</script>
+</head>
+<body>
+<div id="a">
+ <div id="b">
+  <div id="ba">	</div>
+  <div id="bc">	</div>
+ </div>
+ <div id="c">
+  <div id="ca">
+    <div id="cba"><input type="button" id="cba1" value="首页" onMouseMove="bigImg(this)" onmouseout="normalImg(this)"  onClick="tz1()">
+    </div>	
+  </div>
+   <div id="cc">	<div id="cba"><input type="button" id="cba1" value="练习" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" onClick="tz3()">
+   </div>
+  </div>
+ </div>
+ <div id="d">
+ 	<div id="da">
+     <ul id="nav">
+      <li onclick="testdata('<br>《饮湖上初晴后雨》<br><br>苏轼<br><br>水光潋滟晴方好，山色空蒙雨亦奇。<br><br>欲把西湖比西子，浓妆淡抹总相宜。<br><br><hr><hr><p>翻译：在灿烂的阳光照耀下，西湖水微波粼粼，波光艳丽，看起来很美；雨天时，在雨幕的笼罩下，西湖周围的群山迷迷茫茫，若有若无，也显得非常奇妙。若把西湖比作古美女西施，淡妆浓抹都是那么得十分适宜。<p>赏析：第二首诗的上半首既写了西湖的水光山色，也写了西湖的晴姿雨态。上半首写的景是交换、对应之景，情是广泛、豪宕之情，情景交融，句间情景相对，西湖之美概写无余，诗人苏轼之情表现无遗。下半首诗里，诗人没有紧承前两句，进一步运用他的写气图貌之笔来描绘湖山的晴光雨色，而是以貌取神，只用一个既空灵又贴切的妙喻就传出了湖山的神韵。')">《饮湖上初晴后雨》<a href="ss.html">苏轼</a>&nbsp;
+      <audio id="music" src="music/1.mp3" loop autoplay></audio>
+      <img src="img/00.jpg" onClick="play()" alt="user" width="16px" height="16px">&nbsp;&nbsp;
+      </li>
+      <li><br></li>
+     
+       <li onclick="testdata('<br>《晓出净慈寺送林子方》<br><br>杨万里<br><br>毕竟西湖六月中，风光不与四时同。<br><br>接天莲叶无穷碧，映日荷花别样红。<br><br><hr><hr><p>翻译：六月里的西子湖啊，到底特殊，秀丽的风光和其他时节迥然不同。碧绿的莲叶连接天际，浩渺无尽，红日与荷花相映，色彩分外鲜艳娇红。<p>赏析：首句看似突兀，实际造句大气，虽然读者还不曾从诗中领略到西湖美景，但已能从诗人赞叹的语气中感受到了。诗句似脱口而出，是大惊大喜之余最直观的感受，因而更强化了西湖之美。后两句诗人抓住了这盛夏时特有的景物，概括而又贴切。这种在谋篇上的转化，虽然跌宕起伏，却没有突兀之感。看似平淡的笔墨，展现了令人回味的艺术境地。')">《晓出净慈寺送林子方》<a href="ywl.html">杨万里</a>
+        <audio id="music1" src="music/2.mp3" loop autoplay></audio>
+      <img src="img/00.jpg" onClick="play1()" alt="user" width="16px" height="16px">
+      </li>
+      <li><br></li>
+       <li onclick="testdata('<br>《杭州春望》<br>白居易<br><br>望海楼明照曙霞，护江堤白踏晴沙。<br><br>涛声夜入伍员庙，柳色春藏苏小家。<br><br>红袖织绫夸柿蒂，青旗沽酒趁梨花。<br><br>谁开湖寺西南路，草绿裙腰一道斜。<br><hr><p>翻译：望海楼沐浴着明丽的朝霞，晴日下护江堤闪烁着白沙。海涛声声深夜传入伍员庙，杨柳青青春意藏在苏小家。巧手织出柿蒂花纹的绫布，买来佳酿趁着早春的梨花。谁筑起西南通向湖寺的路？绿草一带似美人裙腰横斜。<br>赏析：这首诗把杭州春日最有特征的景物，熔铸在一篇之中，就像用五色彩笔，画出一幅《杭州春望图》。画面以春柳、春草、春树及江水、湖水的翠绿为主色，又以梨花、红裙、彩绫、酒旗加以点染，朝日霞光映照其间，把杭州的春光装点得美丽无比，散发着浓郁的春意。')">《杭州春望》<a href="bjy.html">白居易</a>&nbsp;
+        <audio id="music2" src="music/3.mp3" loop autoplay></audio>
+      <img src="img/00.jpg" onClick="play2()" alt="user" width="16px" height="16px">&nbsp;&nbsp;
+      </li><li><br></li>
+      <li onclick="testdata('<br>《题临安邸》<br><br>林升<br><br>山外青山楼外楼，西湖歌舞几时休。<br><br>暖风熏得游人醉，直把杭州当汴州。<br><br><hr><hr><p>翻译：青山无尽楼阁连绵望不见头，西湖上的歌舞几时才能停休？暖洋洋的春风吹得贵人如醉，简直是把杭州当成了那汴州。<br>赏析：这是一首写在临安城一家旅店墙壁上，不但通过描写乐景来表哀情，使情感倍增，而且在深邃的审美境界中，蕴含着深沉的意蕴。同时，诗人以讽刺的语言中，不漏声色地揭露了“游人们”的反动本质，也由此表现出诗人的愤激之情。')">《题临安邸》  <a href="ls.html">林升</a>&nbsp;
+      <audio id="music3" src="music/4.mp3" loop autoplay></audio>
+      <img src="img/00.jpg" onClick="play3()" alt="user" width="16px" height="16px">&nbsp;&nbsp;
+      </li>
+      <li><br></li>
+      <li onClick="testdata('<br>《钱塘湖春行》<br>白居易<br><br>孤山寺北贾亭西，水面初平云脚低。<br><br>几处早莺争暖树，谁家新燕啄春泥。<br><br>乱花渐欲迷人眼，浅草才能没马蹄。<br><br>最爱湖东行不足，绿杨阴里白沙堤。<br><hr><p>翻译：行至孤山寺北，贾公亭西，暂且歇脚，举目远眺，水面平涨，白云低垂，秀色无边。几只黄莺，争先飞往向阳树木，谁家燕子，为筑新巢衔来春泥？鲜花缤纷，几乎迷人眼神，野草青青，刚刚遮没马蹄。湖东景色，令人流连忘返，最为可爱的，还是那绿杨掩映的白沙堤。<br>赏析：此诗通过写西湖早春明媚风光的描绘，抒发了作者早春游湖的喜悦和对钱塘湖风景的喜爱，更表达了作者对于自然之美的热爱之情。尤其是中间四句，细致地描绘了西湖春行所见景物，形象活现，即景寓情，准确生动地表现了自然之物的活泼情趣和雅致闲情。')">《钱塘湖春行》<a href="bjy.html">白居易</a>&nbsp;
+       <audio id="music4" src="music/5.mp3" loop autoplay></audio>
+      <img src="img/00.jpg" onClick="play4()" alt="user" width="16px" height="16px">&nbsp;&nbsp;    	
+      </li>
+      <li><br></li>
+      <li onclick="testdata('<br>《春题湖上》<br>白居易<br><br>湖上春来似画图，乱峰围绕水平铺。<br><br>松排山面千重翠，月点波心一颗珠。<br><br>碧毯线头抽早稻，青罗裙带展新蒲。<br><br>未能抛得杭州去，一半勾留是此湖。<br><br><hr><p>翻译：春天到来，湖面上像一幅图画。群峰围绕，水面平铺。松树在山上排开层层翠色，月亮向波心点出一粒明珠。绿色的毛毯绒头是抽长的早稻，青色的罗裙飘带是舒展的新蒲。我不能离开杭州到别处去，有一半原因是留恋西湖。<br>赏析：这首诗前六句写景，突出一个“绿”字，后两句写情，突出一个“恋”字，做到借景抒情，情景交融。后人评论此诗“以不舍意作结，而曰‘一半勾留’，言外正有余情。”全诗不仅结构上曲折委婉，而且借景深化了诗旨。')">《春题湖上》<a href="bjy.html">白居易</a>&nbsp;
+      	
+      </li>
+      <li><br></li>
+     <li onClick="testdata('<br>《杭州送裴大泽赴庐州长史》<br><br>李白<br><br>西江天柱远，东越海门深。<br><br>去割慈亲恋，行忧报国心。<br><br>好风吹落日，流水引长吟。<br><br>五月披裘者，应知不取金。<br><br><hr><p>翻译：西江远远地离天柱山而去，东越山水汇合处海门深深。离开时难以割舍慈亲的爱恋，行走中不忘报国忧民之忠心。好风为你吹落烈日好出行，山间流水为你送行而长吟。你就像那五月披裘砍柴人，应知当官不为金钱是为民。<br>赏析：此诗一至三联都对仗，可以看出当时李白情绪极好。来了兴趣就大对起来，这是他特点之一。从诗意尤其是结尾两句意思看，李白非常崇尚清正廉洁的官员。如果当官，想必李白会是个清廉的官员。')">《杭州送裴大泽赴庐州长史》<a href="lb.html">李白</a>
+     	
+     </li><br>
+      <li onclick="testdata('<br>《忆江南三首其一》<br><br>白居易<br><br>江南好，风景旧曾谙；<br><br>日出江花红胜火，春来江水绿如蓝。<br><br>能不忆江南？<br><br><hr><hr><p>翻译：江南的风景多么美好，风景久已熟悉。春天到来时，太阳从江面升起，把江边的鲜花照得比火红，碧绿的江水绿得胜过蓝草。怎能叫人不怀念江南？<br>赏析：总写对江南的回忆，选择了江花和春水，衬以日出和春天的背景，显得十分鲜艳奇丽，生动地描绘出江南春意盎然的大好景象；')">《忆江南三首其一》<a href="bjy.html">白居易</a>&nbsp;
+      	
+      </li><li><br></li>  
+      <li onclick="testdata('<br>《夜泛西湖》<br><br>苏轼br><br>菰蒲无边水茫茫，荷花夜开风露香。<br><br>渐见灯明出远寺，更待月黑看湖光。<br><br><hr><hr><p>翻译：菰蒲无边无际，湖水浩浩荡荡，荷花在夜色中开放，风露中渗透了它的幽香。远处的寺院灯火，越来越显得明亮，我还要等到月落天黑，欣赏这万顷闪耀的湖光。<br>赏析：全诗写的就是作者夜泛西湖所见的美景。前两句写的是夜晚的西湖，湖水、荷花和阵阵飘香，都让人销魂。第三句中写的是昏昏的灯光、远处的寺庙，而最后一句写的是作者接下来的准备要做的事，他希望在夜更深的时候来欣赏西湖。')">《夜泛西湖》<a href="ss.html">苏轼</a>&nbsp;
+      	
+      </li><li><br></li>  
+     </ul>
+ 	</div>
+ 	<div id="db"><p>点击左侧听听古诗朗诵并欣赏古诗</div>
+ </div>
+</div>
+</body>
+</html>
