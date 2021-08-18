@@ -1,10 +1,102 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" http-equiv="refresh" content="1" />
-    <title></title>
+    <meta charset="utf-8">
+    <title>诗情画意杭州记</title>
+    <style type="text/css">
+        #shi {
+            font-size: 44px;
+            color: #09F;
+            height: 525px;
+            font-weight: bold;
+            width: 1024px;
+            text-shadow: 5px 5px 5px black,-1px -1px 6px gold, 2px 2px 3px green;
+            font-family: 隶书;
+            font-style: italic;
+        }
+
+        #a {
+            background-size: 1024px 768px;
+            background-image: url(img/13.jpg);
+            width: 1024px;
+            height: 768px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #b {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 420px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 200px;
+        }
+
+        #bb {
+            background-image: url(img/1.jpg);
+            background-position: center;
+            width: 120px;
+            border-radius: 100px;
+            height: 60px;
+            filter: alpha(Opacity=80);
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+            font-size: 30px;
+            font-family: "华文彩云";
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
-   测试！！！！
+    <div id="a">
+        <div id="wai" style="width:0px; height:200px; overflow:hidden; top:200px; position: relative; left: 50px;">
+            <div id="shi">
+                欢迎来到杭州，<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里你将领略杭州的诗情画意！
+            </div>
+        </div><div id="b"><input type="button" id="bb" value="开始" onClick="tz()" onMouseMove="bigImg(this)" onmouseout="normalImg(this)" border="0"></div>
+    </div>
 </body>
+<script type="text/javascript">showshi();
+function showshi()
+{
+    var s= document.getElementById("wai");
+    if(parseInt(s.style.width)<1024)
+    {
+    var w=parseInt(s.style.width)+1;
+    s.style.width=w+"px";
+    window.setTimeout("showshi()",5);
+    }
+}
+function tz(){
+
+window.location.href='shouye.html';
+
+}
+function bigImg(x)
+{
+x.style.height="80px";
+x.style.width="200px";
+x.style.fontSize="50px";
+}
+
+function normalImg(x)
+{
+x.style.height="60px";
+x.style.width="120px";
+x.style.fontSize="30px";
+}</script>
 </html>
